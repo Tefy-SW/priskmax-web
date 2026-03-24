@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="Blog de Seguridad y Salud en el Trabajo — PRISKMAX 593. Artículos, guías y novedades sobre normativa SST en Ecuador."/>
+  <title>Blog SST — PRISKMAX 593</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link rel="stylesheet" href="assets/css/blog.css"/>
+</head>
+<body>
+
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <a href="index.html">Inicio</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span style="color:var(--green)">Blog SST</span>
+      </nav>
+      <span class="section-tag"><i class="fa-solid fa-newspaper"></i> Conocimiento SST</span>
+      <h1>Blog de <span class="text-accent">Seguridad</span> Laboral</h1>
+      <p>Artículos, guías y novedades sobre Seguridad, Salud Ocupacional y Gestión Ambiental en Ecuador. Mantente actualizado con la normativa vigente.</p>
+    </div>
+  </section>
+
+  <!-- BLOG CONTENT -->
+  <section id="blog" class="section">
+    <div class="bg-mesh"></div>
+    <div class="container">
+
+      <!-- ARTÍCULO DESTACADO -->
+      <div id="featuredSection"></div>
+
+      <!-- FILTROS -->
+      <div class="filter-bar">
+        <div class="search-wrap">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput" placeholder="Buscar artículos..." aria-label="Buscar artículos"/>
+        </div>
+        <div class="filter-cats">
+          <button class="cat-btn active" data-cat="Todos">Todos</button>
+          <button class="cat-btn" data-cat="Normativa">Normativa</button>
+          <button class="cat-btn" data-cat="SST">SST</button>
+          <button class="cat-btn" data-cat="Seguridad">Seguridad</button>
+          <button class="cat-btn" data-cat="Auditorías">Auditorías</button>
+          <button class="cat-btn" data-cat="Ambiente">Ambiente</button>
+        </div>
+      </div>
+
+      <!-- LAYOUT -->
+      <div class="blog-layout">
+        <div>
+          <div class="blog-grid" id="blogGrid"></div>
+          <div id="emptyState">
+            <i class="fa-solid fa-file-circle-question"></i>
+            <p>No se encontraron artículos con ese criterio.</p>
+            <button class="btn btn-outline btn-sm" onclick="resetFilters()" style="margin-top:.75rem;">Ver todos los artículos</button>
+          </div>
+          <div class="pagination" id="pagination"></div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+          <!-- Newsletter -->
+          <div class="sidebar-card">
+            <p class="sidebar-title"><i class="fa-solid fa-bell" style="color:var(--green);margin-right:.3rem;"></i> Novedades SST</p>
+            <p style="font-size:.875rem;color:var(--text-muted);margin-bottom:.25rem;">Recibe nuevos artículos y alertas de normativa directamente en tu correo.</p>
+            <form class="nl-form" onsubmit="nlSubmit(event)">
+              <input type="email" placeholder="tu@correo.com" required aria-label="Correo para newsletter"/>
+              <button type="submit" class="btn btn-primary" style="justify-content:center;">
+                <i class="fa-solid fa-paper-plane"></i> Suscribirme
+              </button>
+              <p class="nl-note"><i class="fa-solid fa-lock" style="color:var(--green);"></i> Sin spam. Cancela cuando quieras.</p>
+            </form>
+          </div>
+
+          <!-- Más leídos -->
+          <div class="sidebar-card">
+            <p class="sidebar-title"><i class="fa-solid fa-fire" style="color:#f39c12;margin-right:.3rem;"></i> Más leídos</p>
+            <div class="popular-list" id="popularList"></div>
+          </div>
+
+          <!-- Tags -->
+          <div class="sidebar-card">
+            <p class="sidebar-title"><i class="fa-solid fa-tags" style="color:var(--sky);margin-right:.3rem;"></i> Temas</p>
+            <div class="tags-cloud" id="tagsCloud"></div>
+          </div>
+
+          <!-- CTA lateral -->
+          <div class="sidebar-card" style="background:linear-gradient(135deg,rgba(57,199,122,0.1),rgba(56,191,255,0.06));border-color:rgba(57,199,122,0.2);">
+            <p style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--white);margin-bottom:.5rem;">¿Necesitas cumplir con el SUT?</p>
+            <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:.75rem;">Somos expertos en Plan de Prevención de Riesgos Laborales.</p>
+            <a href="paquetes.html" class="btn btn-primary" style="width:100%;justify-content:center;font-size:.875rem;">Ver paquetes →</a>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="container">
+      <span class="section-tag" style="margin-bottom:1rem;"><i class="fa-solid fa-pen-nib"></i> Comparte conocimiento</span>
+      <h2>¿Tienes una duda sobre <span class="text-accent">normativa SST</span>?</h2>
+      <p>Consúltanos directamente. Nuestro equipo técnico puede orientarte sin costo y sin compromiso.</p>
+      <div class="btn-group justify-center">
+        <a href="https://wa.me/593992945007" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+          <i class="fa-brands fa-whatsapp"></i> Preguntar por WhatsApp
+        </a>
+        <a href="contacto.html" class="btn btn-outline btn-lg">
+          <i class="fa-solid fa-envelope"></i> Enviar consulta
+        </a>
+      </div>
+      <p class="cta-note">Asesoría gratuita · Sin compromiso</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" style="display:inline-flex;align-items:center;gap:.5rem;margin-bottom:.75rem;">
+            <img src="assets/img/logo.png" alt="PRISKMAX" height="36" onerror="this.style.display='none'" />
+            <span style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--white);">PRISKMAX<sup style="font-size:.55em;color:var(--sky);">593</sup></span>
+          </a>
+          <p>Seguridad · Salud Ocupacional · Ambiente.<br/>Cumplimiento legal real para tu empresa.</p>
+          <div class="footer-socials" style="margin-top:1rem;">
+            <a href="https://wa.me/593992945007" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://instagram.com/priskmax" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1D75Cncb86/" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="mailto:cristian.guanorocha99@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Servicios</p>
+          <ul class="footer-links">
+            <li><a href="servicios.html">Plan de Prevención SUT</a></li>
+            <li><a href="servicios.html">Salud Ocupacional</a></li>
+            <li><a href="servicios.html">Gestión Ambiental</a></li>
+            <li><a href="servicios.html">Asesoría SST</a></li>
+            <li><a href="servicios.html">Capacitaciones</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Empresa</p>
+          <ul class="footer-links">
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="index.html#por-que">¿Por qué PRISKMAX?</a></li>
+            <li><a href="paquetes.html">Paquetes</a></li>
+            <li><a href="blog.html">Blog SST</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Contacto</p>
+          <ul class="footer-links">
+            <li><a href="mailto:cristian.guanorocha99@gmail.com"><i class="fa-solid fa-envelope" style="color:var(--green);width:14px;"></i> cristian.guanorocha99@gmail.com</a></li>
+            <li><a href="https://wa.me/593992945007" target="_blank"><i class="fa-brands fa-whatsapp" style="color:var(--green);width:14px;"></i> +593 99 294 5007</a></li>
+            <li style="padding-top:.5rem;color:var(--text-muted);font-size:.88rem;display:flex;align-items:flex-start;gap:.5rem;">
+              <i class="fa-solid fa-location-dot" style="color:var(--silver-dark);margin-top:.2rem;"></i> Ecuador
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 PRISKMAX 593. Todos los derechos reservados.</span>
+        <span style="display:flex;align-items:center;gap:.4rem;font-size:.8rem;"><i class="fa-solid fa-shield-halved" style="color:var(--green);"></i> Seguridad · Salud Ocupacional · Ambiente</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+  <script>
+  /* ═══ BLOG ENGINE ═══════════════════════════════════════ */
+  const POSTS_PER_PAGE = 6;
+  let allPosts = [];
+  let filtered  = [];
+  let currentPage = 1;
+  let currentCat  = 'Todos';
+  let currentSearch = '';
+
+  /* Formato de fecha */
+  function fmtDate(d) {
+    return new Date(d + 'T00:00:00').toLocaleDateString('es-EC', { year:'numeric', month:'long', day:'numeric' });
+  }
+
+  /* Renderiza artículo destacado */
+  function renderFeatured(post) {
+    const sec = document.getElementById('featuredSection');
+    sec.innerHTML = `
+      <div class="featured-post reveal">
+        <div class="featured-visual card-thumb--${post.color}">
+          <div class="thumb-media">
+            ${post.imagen_emoji.includes('/')
+              ? `<img src="${post.imagen_emoji}" alt="${post.titulo}" />`
+              : `<span style="font-size:5rem;">${post.imagen_emoji}</span>`
+            }
+          </div>
+          <span class="featured-badge"><i class="fa-solid fa-star"></i> Destacado</span>
+        </div>
+        <div class="featured-content">
+          <div class="meta">
+            <span class="card-cat cat--${post.categoria}">${post.categoria}</span>
+            <span class="card-date"><i class="fa-regular fa-calendar"></i> ${fmtDate(post.fecha)}</span>
+            <span class="card-read"><i class="fa-regular fa-clock"></i> ${post.tiempo_lectura} min</span>
+          </div>
+          <h2>${post.titulo}</h2>
+          <p>${post.resumen}</p>
+          <div class="card-tags">${post.tags.map(t=>`<span class="card-tag">${t}</span>`).join('')}</div>
+          <a href="blog/${post.slug}.html" class="btn btn-primary">
+            Leer artículo <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>`;
+    /* Re-observe for reveal */
+    document.querySelectorAll('#featuredSection .reveal').forEach(el => {
+      el.classList.add('visible');
+    });
+  }
+
+  /* Renderiza tarjeta de artículo */
+  function cardHTML(post) {
+    return `
+      <div class="blog-card reveal" data-cat="${post.categoria}" data-id="${post.id}">
+        <div class="card-thumb card-thumb--${post.color}">
+          <div class="thumb-media">
+            ${post.imagen_emoji.includes('/')
+              ? `<img src="${post.imagen_emoji}" alt="${post.titulo}" />`
+              : `<span style="font-size:3.5rem;">${post.imagen_emoji}</span>`
+            }
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-cat cat--${post.categoria}">${post.categoria}</span>
+            <span class="card-date"><i class="fa-regular fa-calendar"></i> ${fmtDate(post.fecha)}</span>
+          </div>
+          <h3>${post.titulo}</h3>
+          <p>${post.resumen}</p>
+          <div class="card-tags">${post.tags.slice(0,3).map(t=>`<span class="card-tag">${t}</span>`).join('')}</div>
+          <a href="blog/${post.slug}.html" class="card-link">
+            Leer artículo <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>`;
+  }
+
+  /* Renderiza grid con paginación */
+  function renderGrid() {
+    const grid = document.getElementById('blogGrid');
+    const empty = document.getElementById('emptyState');
+    const start = (currentPage - 1) * POSTS_PER_PAGE;
+    const page  = filtered.slice(start, start + POSTS_PER_PAGE);
+
+    if (filtered.length === 0) {
+      grid.innerHTML = '';
+      empty.style.display = 'block';
+    } else {
+      empty.style.display = 'none';
+      grid.innerHTML = page.map(cardHTML).join('');
+      grid.querySelectorAll('.reveal').forEach(el => {
+        setTimeout(() => el.classList.add('visible'), 50);
+      });
+    }
+    renderPagination();
+  }
+
+  /* Paginación */
+  function renderPagination() {
+    const pages = Math.ceil(filtered.length / POSTS_PER_PAGE);
+    const pg = document.getElementById('pagination');
+    if (pages <= 1) { pg.innerHTML = ''; return; }
+    let html = '';
+    for (let i = 1; i <= pages; i++) {
+      html += `<button class="page-btn${i === currentPage ? ' active' : ''}" onclick="goPage(${i})">${i}</button>`;
+    }
+    pg.innerHTML = html;
+  }
+
+  function goPage(n) {
+    currentPage = n;
+    renderGrid();
+    document.getElementById('blogGrid').scrollIntoView({ behavior:'smooth', block:'start' });
+  }
+
+  /* Filtrar */
+  function applyFilters() {
+    currentPage = 1;
+    const q = currentSearch.toLowerCase();
+    filtered = allPosts.filter(p => {
+      const catOk  = currentCat === 'Todos' || p.categoria === currentCat;
+      const termOk = !q || p.titulo.toLowerCase().includes(q) || p.resumen.toLowerCase().includes(q) || p.tags.some(t => t.toLowerCase().includes(q));
+      return catOk && termOk;
+    });
+    renderGrid();
+  }
+
+  function resetFilters() {
+    currentCat = 'Todos';
+    currentSearch = '';
+    document.getElementById('searchInput').value = '';
+    document.querySelectorAll('.cat-btn').forEach((b,i) => b.classList.toggle('active', i===0));
+    applyFilters();
+  }
+
+  /* Sidebar popular */
+  function renderPopular(posts) {
+    const top = posts.slice(0, 4);
+    document.getElementById('popularList').innerHTML = top.map((p,i) => `
+      <a href="blog/${p.slug}.html" class="popular-item" style="text-decoration:none;">
+        <span class="popular-num">0${i+1}</span>
+        <div class="popular-text">
+          <strong>${p.titulo}</strong>
+          <span>${p.tiempo_lectura} min de lectura</span>
+        </div>
+      </a>`).join('');
+  }
+
+  /* Tags cloud */
+  function renderTags(posts) {
+    const tagSet = new Set();
+    posts.forEach(p => p.tags.forEach(t => tagSet.add(t)));
+    document.getElementById('tagsCloud').innerHTML = [...tagSet].map(t =>
+      `<button class="tag-item" onclick="filterByTag('${t}')">${t}</button>`
+    ).join('');
+  }
+
+  function filterByTag(tag) {
+    currentSearch = tag;
+    document.getElementById('searchInput').value = tag;
+    currentCat = 'Todos';
+    document.querySelectorAll('.cat-btn').forEach((b,i) => b.classList.toggle('active', i===0));
+    applyFilters();
+    document.getElementById('blogGrid').scrollIntoView({ behavior:'smooth' });
+  }
+
+  /* Newsletter */
+  function nlSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button');
+    btn.innerHTML = '<i class="fa-solid fa-check"></i> ¡Suscrito!';
+    btn.disabled = true;
+    e.target.reset();
+    setTimeout(() => { btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Suscribirme'; btn.disabled = false; }, 3000);
+  }
+
+  /* INIT — carga posts.json */
+  async function init() {
+    try {
+      const res  = await fetch('assets/data/posts.json');
+      const data = await res.json();
+      allPosts = data.posts;
+
+      /* Destacado */
+      const featured = allPosts.find(p => p.destacado) || allPosts[0];
+      renderFeatured(featured);
+
+      /* Grid inicial (sin el destacado) */
+      filtered = allPosts.filter(p => p.id !== featured.id);
+      renderGrid();
+      renderPopular(allPosts);
+      renderTags(allPosts);
+
+      /* Búsqueda */
+      document.getElementById('searchInput').addEventListener('input', e => {
+        currentSearch = e.target.value;
+        applyFilters();
+      });
+
+      /* Categorías */
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentCat = btn.dataset.cat;
+          if (currentCat !== 'Todos') {
+            filtered = allPosts;
+          } else {
+            filtered = allPosts.filter(p => p.id !== featured.id);
+          }
+          applyFilters();
+        });
+      });
+
+    } catch(err) {
+      console.error('Error cargando posts:', err);
+      document.getElementById('blogGrid').innerHTML = '<p style="color:var(--text-muted);grid-column:1/-1;text-align:center;padding:2rem;">Error cargando artículos. Asegúrate de abrir el sitio desde un servidor local o Netlify.</p>';
+    }
+  }
+
+  init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "slug": "plan-prevencion-sut-2025",
+      "titulo": "¿Qué es el Plan de Prevención de Riesgos Laborales y por qué es obligatorio en 2025?",
+      "resumen": "Todo lo que necesitas saber sobre el Plan de Prevención exigido por el SUT, quiénes deben tenerlo y qué pasa si no cumples.",
+      "categoria": "Normativa",
+      "fecha": "2025-02-15",
+      "tiempo_lectura": 5,
+      "imagen_emoji": "assets/img/plan.jpg",
+      "color": "green",
+      "destacado": true,
+      "tags": [
+        "SUT",
+        "Plan de Prevención",
+        "Normativa",
+        "Ministerio de Trabajo"
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "matriz-riesgos-laborales",
+      "titulo": "¿Cómo elaborar una Matriz de Riesgos Laborales paso a paso?",
+      "resumen": "Guía práctica para identificar, evaluar y controlar los riesgos en cada puesto de trabajo de tu empresa.",
+      "categoria": "SST",
+      "fecha": "2025-02-05",
+      "tiempo_lectura": 7,
+      "imagen_emoji": "assets/img/matriz.png",
+      "color": "sky",
+      "destacado": false,
+      "tags": [
+        "Matriz de Riesgos",
+        "SST",
+        "Evaluación"
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "epp-seleccion-correcta",
+      "titulo": "Equipo de Protección Personal: ¿cómo elegir el correcto según el riesgo?",
+      "resumen": "No todo EPP sirve para todo riesgo. Aprende a seleccionar, documentar y registrar correctamente el equipo de protección.",
+      "categoria": "Seguridad",
+      "fecha": "2025-01-20",
+      "tiempo_lectura": 6,
+      "imagen_emoji": "assets/img/casco.jpg",
+      "color": "green",
+      "destacado": false,
+      "tags": [
+        "EPP",
+        "Seguridad",
+        "Protección"
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "inspecciones-ministerio-trabajo",
+      "titulo": "¿Qué revisa el Ministerio de Trabajo en una inspección de SST?",
+      "resumen": "Conoce exactamente qué documentos, registros y condiciones verifican los inspectores laborales y cómo prepararte.",
+      "categoria": "Auditorías",
+      "fecha": "2025-01-10",
+      "tiempo_lectura": 8,
+      "imagen_emoji": "assets/img/auditoria.jpg",
+      "color": "sky",
+      "destacado": true,
+      "tags": [
+        "Inspección",
+        "Ministerio de Trabajo",
+        "Auditoría",
+        "Cumplimiento"
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "gestion-ambiental-empresas",
+      "titulo": "Gestión Ambiental en empresas: obligaciones y beneficios",
+      "resumen": "Las empresas también tienen responsabilidades ambientales. Descubre qué exige la normativa y cómo integrarla con tu sistema SST.",
+      "categoria": "Ambiente",
+      "fecha": "2024-12-20",
+      "tiempo_lectura": 6,
+      "imagen_emoji": "assets/img/ambiente.jpg",
+      "color": "green",
+      "destacado": false,
+      "tags": [
+        "Gestión Ambiental",
+        "MAE",
+        "Normativa"
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "plan-emergencias-evacuacion",
+      "titulo": "Plan de Emergencias y Evacuación: requisitos y cómo implementarlo",
+      "resumen": "El Plan de Emergencias es parte obligatoria del sistema SST. Te explicamos sus componentes y los simulacros que debes documentar.",
+      "categoria": "SST",
+      "fecha": "2024-12-05",
+      "tiempo_lectura": 7,
+      "imagen_emoji": "assets/img/simulacro.png",
+      "color": "sky",
+      "destacado": false,
+      "tags": [
+        "Plan de Emergencias",
+        "Evacuación",
+        "Brigadas"
+      ]
+    }
+  ]
+}

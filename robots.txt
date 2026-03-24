@@ -1,0 +1,15 @@
+# ============================================================
+# PRISKMAX 593 — robots.txt
+# Indica a los motores de búsqueda qué pueden rastrear
+# ============================================================
+
+User-agent: *
+Allow: /
+
+# Archivos que no necesitan indexarse
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /components/
+
+# Sitemap
+Sitemap: https://www.priskmax.com/sitemap.xml

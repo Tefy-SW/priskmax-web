@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- ═══════════════════════════════════════════════
+       PÁGINAS PRINCIPALES
+  ════════════════════════════════════════════════ -->
+
+  <!-- Inicio -->
+  <url>
+    <loc>https://www.priskmax.com/</loc>
+    <lastmod>2025-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Servicios -->
+  <url>
+    <loc>https://www.priskmax.com/servicios.html</loc>
+    <lastmod>2025-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Paquetes y Cotización -->
+  <url>
+    <loc>https://www.priskmax.com/paquetes.html</loc>
+    <lastmod>2025-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Contacto -->
+  <url>
+    <loc>https://www.priskmax.com/contacto.html</loc>
+    <lastmod>2025-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog (listado) -->
+  <url>
+    <loc>https://www.priskmax.com/blog.html</loc>
+    <lastmod>2025-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════
+       ARTÍCULOS DEL BLOG
+       Agrega una entrada <url> por cada artículo nuevo
+       que publiques en la carpeta /blog/
+  ════════════════════════════════════════════════ -->
+
+  <url>
+    <loc>https://www.priskmax.com/blog/plan-prevencion-sut-2025.html</loc>
+    <lastmod>2025-02-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.priskmax.com/blog/matriz-riesgos-laborales.html</loc>
+    <lastmod>2025-02-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.priskmax.com/blog/epp-seleccion-correcta.html</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.priskmax.com/blog/inspecciones-ministerio-trabajo.html</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.priskmax.com/blog/gestion-ambiental-empresas.html</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.priskmax.com/blog/plan-emergencias-evacuacion.html</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

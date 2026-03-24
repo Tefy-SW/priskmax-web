@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Paquetes y cotización — PRISKMAX 593. Planes de Seguridad y Salud Ocupacional para empresas en Ecuador." />
+  <title>Paquetes y Cotización — PRISKMAX 593</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/paquetes.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR SUPERIOR -->
+  <nav id="top-nav" aria-label="Navegación principal">
+    <div class="container">
+      <div class="top-nav-inner">
+        <a href="index.html" class="top-nav-logo">
+          <img src="assets/img/logo.png" alt="PRISKMAX" onerror="this.style.display='none'" />
+          <span>PRISKMAX<sup style="font-size:.6em;color:var(--sky)">593</sup></span>
+        </a>
+        <div class="top-nav-links">
+          <a href="index.html">Inicio</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="paquetes.html" style="color:var(--green);">Paquetes</a>
+          <a href="blog.html">Blog</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- NAVBAR BURBUJA -->
+  <nav id="bubble-nav" aria-label="Menú flotante">
+    <div class="bubble-inner">
+      <a href="index.html" class="bubble-logo">
+        <img src="assets/img/logo.png" alt="PRISKMAX" onerror="this.style.display='none'" />
+        <span>PRISKMAX</span>
+      </a>
+      <div class="bubble-links">
+        <a href="index.html"     class="bubble-link">Inicio</a>
+        <a href="servicios.html" class="bubble-link">Servicios</a>
+        <a href="paquetes.html"  class="bubble-link active">Paquetes</a>
+        <a href="blog.html"      class="bubble-link">Blog</a>
+        <a href="contacto.html"  class="bubble-link">Contacto</a>
+        <a href="#cotizar"       class="bubble-cta-mobile">Cotizar ahora</a>
+      </div>
+      <a href="#cotizar" class="bubble-cta">Cotizar ahora</a>
+      <button class="bubble-hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <a href="index.html">Inicio</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span style="color:var(--green)">Paquetes</span>
+      </nav>
+      <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Planes disponibles</span>
+      <h1>Paquetes y <span class="text-accent">Cotización</span></h1>
+      <p>Elige el plan que mejor se adapta al tamaño y necesidades de tu empresa. Todos incluyen acompañamiento técnico y registro en el SUT.</p>
+
+      <!-- Toggle anual/mensual -->
+      <div style="display:flex;justify-content:center;margin-top:var(--gap-lg);">
+        <div class="billing-toggle">
+          <span>Pago único</span>
+          <label class="toggle-switch">
+            <input type="checkbox" id="billing-toggle" />
+            <span class="toggle-track"></span>
+          </label>
+          <span>Plan anual <span class="save-badge">-20%</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section id="planes" class="section">
+    <div class="bg-mesh"></div>
+    <div class="container">
+      <div class="pricing-grid">
+
+        <!-- BÁSICO -->
+        <div class="pricing-card reveal">
+          <div class="plan-top-line plan-top-line--basic"></div>
+          <p class="plan-name">Plan</p>
+          <h2 class="plan-title">Básico</h2>
+          <span class="plan-for"><i class="fa-solid fa-building"></i> Micro y pequeñas empresas (1–10 trabajadores)</span>
+          <div class="plan-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount" data-monthly="280" data-annual="224">280</span>
+            <span class="price-period">/ servicio</span>
+          </div>
+          <p class="price-note">Pago único · IVA no incluido</p>
+          <p class="plan-desc">Ideal para empresas pequeñas que necesitan cumplir con el Plan de Prevención de forma rápida y efectiva.</p>
+          <hr class="plan-divider" />
+          <ul class="plan-features">
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Diagnóstico inicial</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Plan de Prevención SUT básico</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Registro en el SUT</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Matriz de riesgos (hasta 3 puestos)</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> 1 capacitación incluida</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Soporte por WhatsApp (30 días)</li>
+            <li class="plan-feature disabled"><i class="fa-solid fa-xmark"></i> Reglamento Interno SST</li>
+            <li class="plan-feature disabled"><i class="fa-solid fa-xmark"></i> Plan de Emergencias</li>
+            <li class="plan-feature disabled"><i class="fa-solid fa-xmark"></i> Acompañamiento en auditorías</li>
+          </ul>
+          <a href="#cotizar" class="btn btn-outline plan-cta" onclick="selectPlan('Básico')">Cotizar este plan</a>
+        </div>
+
+        <!-- ESTÁNDAR (featured) -->
+        <div class="pricing-card pricing-card--featured reveal reveal-delay-1">
+          <div class="plan-top-line plan-top-line--standard"></div>
+          <div class="popular-badge"><i class="fa-solid fa-star"></i> Más popular</div>
+          <p class="plan-name">Plan</p>
+          <h2 class="plan-title">Estándar</h2>
+          <span class="plan-for"><i class="fa-solid fa-building"></i> Pequeñas y medianas empresas (11–50 trabajadores)</span>
+          <div class="plan-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount" data-monthly="580" data-annual="464">580</span>
+            <span class="price-period">/ servicio</span>
+          </div>
+          <p class="price-note">Pago único · IVA no incluido</p>
+          <p class="plan-desc">El plan completo para empresas que requieren cumplimiento integral con acompañamiento y documentación completa.</p>
+          <hr class="plan-divider" />
+          <ul class="plan-features">
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Diagnóstico inicial completo</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Plan de Prevención SUT completo</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Registro en el SUT</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Matriz de riesgos (hasta 10 puestos)</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Reglamento Interno SST</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Plan de Emergencias y Evacuación</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> 3 capacitaciones incluidas</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Soporte por WhatsApp (90 días)</li>
+            <li class="plan-feature disabled"><i class="fa-solid fa-xmark"></i> Acompañamiento en auditorías</li>
+          </ul>
+          <a href="#cotizar" class="btn btn-primary plan-cta" onclick="selectPlan('Estándar')">Cotizar este plan</a>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="plan-top-line plan-top-line--premium"></div>
+          <p class="plan-name">Plan</p>
+          <h2 class="plan-title">Premium</h2>
+          <span class="plan-for"><i class="fa-solid fa-building"></i> Medianas y grandes empresas (50+ trabajadores)</span>
+          <div class="plan-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount" data-monthly="980" data-annual="784">980</span>
+            <span class="price-period">/ servicio</span>
+          </div>
+          <p class="price-note">Pago único · IVA no incluido</p>
+          <p class="plan-desc">Cobertura total para empresas que requieren acompañamiento continuo, auditorías y gestión ambiental integrada.</p>
+          <hr class="plan-divider" />
+          <ul class="plan-features">
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Diagnóstico integral (SST + Ambiental)</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Plan de Prevención SUT avanzado</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Registro en el SUT</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Matriz de riesgos (puestos ilimitados)</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Reglamento Interno SST</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Plan de Emergencias y Evacuación</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Gestión Ambiental integrada</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Capacitaciones ilimitadas (año)</li>
+            <li class="plan-feature"><i class="fa-solid fa-check"></i> Acompañamiento en auditorías</li>
+          </ul>
+          <a href="#cotizar" class="btn btn-outline plan-cta" style="border-color:rgba(243,156,18,0.5);" onclick="selectPlan('Premium')">Cotizar este plan</a>
+        </div>
+
+      </div>
+
+      <!-- Plan personalizado -->
+      <div style="margin-top:var(--gap-lg);text-align:center;" class="reveal">
+        <div style="display:inline-flex;align-items:center;gap:1rem;flex-wrap:wrap;justify-content:center;
+          background:var(--glass);border:1px solid var(--glass-border);border-radius:var(--radius-lg);
+          padding:var(--gap-md) var(--gap-lg);">
+          <span style="font-size:2rem;"><i class="fa-solid fa-layer-group"></i></span>
+          <div style="text-align:left;">
+            <strong style="color:var(--white);display:block;">¿Necesitas un plan personalizado?</strong>
+            <span style="font-size:.9rem;color:var(--text-muted);">Para empresas con requerimientos específicos o múltiples sedes.</span>
+          </div>
+          <a href="#cotizar" class="btn btn-outline btn-sm" onclick="selectPlan('Personalizado')">Solicitar cotización</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABLA COMPARATIVA -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-table-columns"></i> Comparativa</span>
+        <h2>¿Qué incluye <span class="text-accent">cada plan</span>?</h2>
+      </div>
+      <div class="table-wrap reveal">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Básico</th>
+              <th class="col-featured">Estándar</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="section-row"><td colspan="4">Documentación base</td></tr>
+            <tr>
+              <td>Plan de Prevención SUT</td>
+              <td><i class="fa-solid fa-check"></i></td>
+              <td class="col-featured"><i class="fa-solid fa-check"></i></td>
+              <td><i class="fa-solid fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Registro en el SUT</td>
+              <td><i class="fa-solid fa-check"></i></td>
+              <td class="col-featured"><i class="fa-solid fa-check"></i></td>
+              <td><i class="fa-solid fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Diagnóstico inicial</td>
+              <td><i class="fa-solid fa-check"></i></td>
+              <td class="col-featured"><i class="fa-solid fa-check"></i></td>
+              <td><i class="fa-solid fa-check"></i></td>
+            </tr>
+            <tr class="section-row"><td colspan="4">Documentación adicional</td></tr>
+            <tr>
+              <td>Matriz de riesgos</td>
+              <td>3 puestos</td>
+              <td class="col-featured">10 puestos</td>
+              <td>Ilimitados</td>
+            </tr>
+            <tr>
+              <td>Reglamento Interno SST</td>
+              <td><i class="fa-solid fa-xmark"></i></td>
+              <td class="col-featured"><i class="fa-solid fa-check"></i></td>
+              <td><i class="fa-solid fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Plan de Emergencias</td>
+              <td><i class="fa-solid fa-xmark"></i></td>
+              <td class="col-featured"><i class="fa-solid fa-check"></i></td>
+              <td><i class="fa-solid fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Gestión Ambiental</td>
+              <td><i class="fa-solid fa-xmark"></i></td>
+              <td class="col-featured"><i class="fa-solid fa-xmark"></i></td>
+              <td><i class="fa-solid fa-check"></i></td>
+            </tr>
+            <tr class="section-row"><td colspan="4">Soporte y capacitación</td></tr>
+            <tr>
+              <td>Capacitaciones incluidas</td>
+              <td>1</td>
+              <td class="col-featured">3</td>
+              <td>Ilimitadas (año)</td>
+            </tr>
+            <tr>
+              <td>Soporte técnico</td>
+              <td>30 días</td>
+              <td class="col-featured">90 días</td>
+              <td>12 meses</td>
+            </tr>
+            <tr>
+              <td>Acompañamiento en auditorías</td>
+              <td><i class="fa-solid fa-xmark"></i></td>
+              <td class="col-featured"><i class="fa-solid fa-xmark"></i></td>
+              <td><i class="fa-solid fa-check"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE COTIZACIÓN -->
+  <section id="cotizar" class="section quote-section">
+    <div class="container">
+      <div class="quote-layout">
+
+        <!-- Info lateral -->
+        <div class="quote-info reveal">
+          <span class="section-tag"><i class="fa-solid fa-calculator"></i> Cotización</span>
+          <h2>Solicita tu <span class="text-accent">cotización</span> gratuita</h2>
+          <p>Completa el formulario y te contactamos en menos de 24 horas con una propuesta personalizada según las necesidades de tu empresa.</p>
+          <div class="quote-perks">
+            <div class="quote-perk">
+              <span class="quote-perk-icon"> <i class="fa-solid fa-bolt"></i></span>
+              <div>
+                <h4>Respuesta rápida</h4>
+                <p>Te contactamos en menos de 24 horas hábiles con tu propuesta.</p>
+              </div>
+            </div>
+            <div class="quote-perk">
+              <span class="quote-perk-icon"><i class="fa-solid fa-bullseye"></i></span>
+              <div>
+                <h4>Propuesta personalizada</h4>
+                <p>Adaptamos el plan a tu sector, tamaño y normativa aplicable.</p>
+              </div>
+            </div>
+            <div class="quote-perk">
+              <span class="quote-perk-icon"><i class="fa-solid fa-lock-open"></i></span>
+              <div>
+                <h4>Sin compromiso</h4>
+                <p>La cotización es completamente gratuita y sin ninguna obligación.</p>
+              </div>
+            </div>
+            <div class="quote-perk">
+              <span class="quote-perk-icon"><i class="fa-solid fa-comments"></i></span>
+              <div>
+                <h4>Asesoría incluida</h4>
+                <p>Resolvemos todas tus dudas antes de que tomes cualquier decisión.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="quote-form reveal reveal-delay-1">
+          <!-- Formulario visible -->
+          <div id="form-container">
+            <h3> Datos de cotización</h3>
+            <form id="quoteForm" action="https://formspree.io/f/xojkbryz" method="POST" novalidate>
+              <!-- Honeypot anti-spam -->
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+              <input type="hidden" name="_subject" value="Nueva cotización — PRISKMAX 593" />
+
+              <div style="display:flex;flex-direction:column;gap:var(--gap-md);">
+
+                <div class="form-cols">
+                  <div class="form-group">
+                    <label for="nombre">Nombre Completo<span class="req">*</span></label>
+                    <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="given-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="empresa">Nombre de la empresa <span class="req">*</span></label>
+                    <input class="form-control" type="text" id="empresa" name="empresa" placeholder="Empresa S.A." required autocomplete="organization" />            
+                  </div>
+                </div>
+
+                <div class="form-cols">
+                  <div class="form-group">
+                    <label for="email">Correo electrónico <span class="req">*</span></label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="correo@empresa.com" required autocomplete="email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="telefono">Teléfono / WhatsApp <span class="req">*</span></label>
+                    <input class="form-control" type="tel" id="telefono" name="telefono" placeholder="+593 99 XXX XXXX" required autocomplete="tel" />
+                  </div>
+                </div>
+
+                <div class="form-cols">
+                  <div class="form-group">
+                    <label for="trabajadores">N.° de trabajadores <span class="req">*</span></label>
+                    <select class="form-control" id="trabajadores" name="trabajadores" required>
+                      <option value="" disabled selected>Selecciona</option>
+                      <option value="1-10">1 – 10 trabajadores</option>
+                      <option value="11-25">11 – 25 trabajadores</option>
+                      <option value="26-50">26 – 50 trabajadores</option>
+                      <option value="51-100">51 – 100 trabajadores</option>
+                      <option value="100+">Más de 100</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="sector">Sector económico</label>
+                    <select class="form-control" id="sector" name="sector">
+                      <option value="" disabled selected>Selecciona</option>
+                      <option>Comercio</option>
+                      <option>Manufactura / Industria</option>
+                      <option>Construcción</option>
+                      <option>Servicios</option>
+                      <option>Agricultura / Floricultura</option>
+                      <option>Salud</option>
+                      <option>Minería / Petróleo</option>
+                      <option>Transporte / Logística</option>
+                      <option>Otro</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Plan de interés</label>
+                  <div class="plan-selector" role="group" aria-label="Seleccionar plan">
+                    <label class="plan-pill" id="pill-basico">
+                      <input type="radio" name="plan" value="Básico" />
+                       <i class="fa-solid fa-square"></i> Básico
+                    </label>
+                    <label class="plan-pill" id="pill-estandar">
+                      <input type="radio" name="plan" value="Estándar" />
+                      <i class="fa-solid fa-star"></i> Estándar
+                    </label>
+                    <label class="plan-pill" id="pill-premium">
+                      <input type="radio" name="plan" value="Premium" />
+                      <i class="fa-solid fa-trophy"></i> Premium
+                    </label>
+                    <label class="plan-pill" id="pill-personalizado">
+                      <input type="radio" name="plan" value="Personalizado" />
+                      <i class="fa-solid fa-wrench"></i> Personalizado
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="mensaje">¿Tienes alguna necesidad específica o consulta adicional?</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Cuéntanos más sobre tu empresa, si ya tuviste inspecciones anteriores, etc."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit" id="submit-btn">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  Enviar solicitud de cotización
+                </button>
+                <p class="form-legal">
+                  Al enviar este formulario aceptas nuestra
+                  <a href="#">política de privacidad</a>.
+                  Tus datos son confidenciales y no serán compartidos con terceros.
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <!-- Estado de éxito -->
+          <div class="form-success" id="form-success">
+            <span class="success-icon">✅</span>
+            <h3>¡Solicitud enviada!</h3>
+            <p>Hemos recibido tu cotización. Te contactaremos en menos de 24 horas hábiles.</p>
+            <a href="index.html" class="btn btn-outline">Volver al inicio</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-circle-question"></i> Preguntas frecuentes</span>
+        <h2>Dudas <span class="text-accent">frecuentes</span></h2>
+      </div>
+      <div class="faq-list" style="max-width:780px;margin-inline:auto;">
+
+        <div class="faq-item reveal">
+          <button class="faq-trigger" aria-expanded="false">
+            ¿Qué es el Plan de Prevención de Riesgos Laborales?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-body">
+            Es un documento técnico obligatorio exigido por el Ministerio de Trabajo a través del Sistema Único de Trabajo (SUT). Describe las medidas que la empresa adopta para identificar, evaluar y controlar los riesgos laborales que pueden afectar la salud y seguridad de sus trabajadores.
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-trigger" aria-expanded="false">
+            ¿Qué empresas están obligadas a tenerlo?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-body">
+            Todas las empresas con 10 o más trabajadores están obligadas a contar con su Plan de Prevención registrado en el SUT. Las empresas con menos de 10 trabajadores también deben cumplir con medidas básicas de seguridad, aunque con requisitos simplificados.
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-trigger" aria-expanded="false">
+            ¿Cuánto tiempo tarda el proceso completo?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-body">
+            Dependiendo del plan y el tamaño de la empresa, el proceso puede tomar entre 2 y 6 semanas. El Plan Básico puede completarse en 2–3 semanas. El Plan Estándar en 3–4 semanas, y el Premium entre 4 y 6 semanas, incluyendo gestión ambiental.
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-trigger" aria-expanded="false">
+            ¿Qué pasa si el Ministerio inspecciona mi empresa y no tengo el plan?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-body">
+            Las sanciones pueden ir desde multas de hasta 20 Salarios Básicos Unificados (SBU) hasta la suspensión de actividades. Además, en caso de accidente laboral sin plan registrado, la empresa asume responsabilidades civiles y penales significativas.
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-trigger" aria-expanded="false">
+            ¿Los precios mostrados son finales?
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-body">
+            Los precios mostrados son referenciales. El valor final puede variar según el número exacto de trabajadores, el sector económico, la complejidad de los puestos de trabajo y los servicios adicionales requeridos. Solicita tu cotización personalizada para obtener un precio exacto.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="container">
+      <span class="section-tag" style="margin-bottom:1rem;"><i class="fa-brands fa-whatsapp"></i> Contacto directo</span>
+      <h2>¿Prefieres hablar con <span class="text-accent">un asesor</span>?</h2>
+      <p>Escríbenos por WhatsApp y te respondemos de inmediato. Sin formularios, sin esperas.</p>
+      <div class="btn-group justify-center">
+        <a href="https://wa.me/593992945007?text=Hola%2C%20quiero%20información%20sobre%20los%20paquetes%20de%20PRISKMAX"
+           target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+          <i class="fa-brands fa-whatsapp"></i> Escribir por WhatsApp
+        </a>
+        <a href="contacto.html" class="btn btn-outline btn-lg">
+          <i class="fa-solid fa-envelope"></i> Otras formas de contacto
+        </a>
+      </div>
+      <p class="cta-note">Consulta gratuita · Sin compromiso · Respuesta en menos de 24h</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" style="display:inline-flex;align-items:center;gap:.5rem;margin-bottom:.75rem;">
+            <img src="assets/img/logo.png" alt="PRISKMAX" height="36" onerror="this.style.display='none'" />
+            <span style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--white);">PRISKMAX<sup style="font-size:.55em;color:var(--sky);">593</sup></span>
+          </a>
+          <p>Seguridad · Salud Ocupacional · Ambiente.<br/>Cumplimiento legal real para tu empresa.</p>
+          <div class="footer-socials" style="margin-top:1rem;">
+            <a href="https://wa.me/593992945007" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://instagram.com/priskmax" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1D75Cncb86/" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="mailto:cristian.guanorocha99@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Servicios</p>
+          <ul class="footer-links">
+            <li><a href="servicios.html">Plan de Prevención SUT</a></li>
+            <li><a href="servicios.html">Salud Ocupacional</a></li>
+            <li><a href="servicios.html">Gestión Ambiental</a></li>
+            <li><a href="servicios.html">Asesoría SST</a></li>
+            <li><a href="servicios.html">Capacitaciones</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Empresa</p>
+          <ul class="footer-links">
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="index.html#por-que">¿Por qué PRISKMAX?</a></li>
+            <li><a href="paquetes.html">Paquetes</a></li>
+            <li><a href="blog.html">Blog SST</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Contacto</p>
+          <ul class="footer-links">
+            <li><a href="mailto:cristian.guanorocha99@gmail.com"><i class="fa-solid fa-envelope" style="color:var(--green);width:14px;"></i> cristian.guanorocha99@gmail.com</a></li>
+            <li><a href="https://wa.me/593992945007" target="_blank"><i class="fa-brands fa-whatsapp" style="color:var(--green);width:14px;"></i> +593 99 294 5007</a></li>
+            <li style="padding-top:.5rem;color:var(--text-muted);font-size:.88rem;display:flex;align-items:flex-start;gap:.5rem;">
+              <i class="fa-solid fa-location-dot" style="color:var(--silver-dark);margin-top:.2rem;"></i> Ecuador
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 PRISKMAX 593. Todos los derechos reservados.</span>
+        <span style="display:flex;align-items:center;gap:.4rem;font-size:.8rem;"><i class="fa-solid fa-shield-halved" style="color:var(--green);"></i> Seguridad · Salud Ocupacional · Ambiente</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/validar.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    /* ── Toggle anual/mensual ── */
+    const toggle = document.getElementById('billing-toggle');
+    const amounts = document.querySelectorAll('.price-amount');
+
+    toggle.addEventListener('change', () => {
+      const isAnnual = toggle.checked;
+      amounts.forEach(el => {
+        const val = isAnnual ? el.dataset.annual : el.dataset.monthly;
+        el.textContent = val;
+      });
+    });
+
+    /* ── Selección de plan desde tarjetas ── */
+    function selectPlan(planName) {
+      document.querySelectorAll('.plan-pill').forEach(pill => {
+        const input = pill.querySelector('input');
+        const match = input.value === planName;
+        input.checked = match;
+        pill.classList.toggle('selected', match);
+      });
+      // scroll suave al formulario
+      document.getElementById('cotizar').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    /* ── Selección de plan pill via click ── */
+    document.querySelectorAll('.plan-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        document.querySelectorAll('.plan-pill').forEach(p => p.classList.remove('selected'));
+        pill.classList.add('selected');
+      });
+    });
+
+    /* ── FAQ accordion ── */
+    document.querySelectorAll('.faq-trigger').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+        btn.setAttribute('aria-expanded', !isOpen);
+      });
+    });
+
+    /* ── Formulario con Formspree ── */
+    const form = document.getElementById('quote-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const formContainer = document.getElementById('form-container');
+    const formSuccess = document.getElementById('form-success');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Validación básica
+      const required = form.querySelectorAll('[required]');
+      let valid = true;
+      required.forEach(field => {
+        if (!field.value.trim()) {
+          field.style.borderColor = '#e74c3c';
+          valid = false;
+          field.addEventListener('input', () => { field.style.borderColor = ''; }, { once: true });
+        }
+      });
+      if (!valid) {
+        showToast('Por favor completa los campos obligatorios.', 'error');
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Enviando…';
+
+      try {
+        const data = new FormData(form);
+        const res = await fetch(form.action, {
+          method: 'POST', body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          formContainer.style.display = 'none';
+          formSuccess.classList.add('show');
+        } else {
+          throw new Error('Error en el servidor');
+        }
+      } catch {
+        showToast('Hubo un problema al enviar. Escríbenos por WhatsApp.', 'error');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Enviar solicitud de cotización';
+      }
+    });
+  </script>
+</body>
+</html>
